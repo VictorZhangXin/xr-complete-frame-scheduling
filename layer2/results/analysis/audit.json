@@ -1,0 +1,9 @@
+{
+  "frame_records": 2461954,
+  "validation_runs": 3120,
+  "calibration_runs": 300,
+  "paired_inputs": true,
+  "per_frame_reaggregation": true,
+  "source_hashes": true,
+  "analysis_sha256": "bd391a070b1bf0ce618a70e6090a8a3d231b9d50ba2da2ebda407ba8912c3a8f"
+}

@@ -1,0 +1,398 @@
+{
+  "version": "v3.2",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "dependencies": {
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "calibration_configs": [
+    [
+      "iid",
+      {
+        "duration_s": 3.0,
+        "slot_ms": 0.125,
+        "sources": 4,
+        "fps": 60.0,
+        "mean_packets": 20.0,
+        "packet_bytes": 1200,
+        "deadline_ms": 12.0,
+        "jitter_ms": 1.0,
+        "high_fraction": 0.25,
+        "high_value": 4.0,
+        "queue_packets": 4096,
+        "background": 0.3,
+        "loss": 0.1,
+        "size_cv": 0.5,
+        "high_size_multiplier": 1.0
+      }
+    ],
+    [
+      "iid",
+      {
+        "duration_s": 3.0,
+        "slot_ms": 0.125,
+        "sources": 4,
+        "fps": 60.0,
+        "mean_packets": 20.0,
+        "packet_bytes": 1200,
+        "deadline_ms": 12.0,
+        "jitter_ms": 1.0,
+        "high_fraction": 0.25,
+        "high_value": 4.0,
+        "queue_packets": 4096,
+        "background": 0.45,
+        "loss": 0.1,
+        "size_cv": 0.5,
+        "high_size_multiplier": 1.0
+      }
+    ],
+    [
+      "iid",
+      {
+        "duration_s": 3.0,
+        "slot_ms": 0.125,
+        "sources": 4,
+        "fps": 60.0,
+        "mean_packets": 20.0,
+        "packet_bytes": 1200,
+        "deadline_ms": 12.0,
+        "jitter_ms": 1.0,
+        "high_fraction": 0.25,
+        "high_value": 4.0,
+        "queue_packets": 4096,
+        "background": 0.6,
+        "loss": 0.1,
+        "size_cv": 0.5,
+        "high_size_multiplier": 1.0
+      }
+    ]
+  ],
+  "validation_configs": [
+    [
+      "iid",
+      {
+        "duration_s": 3.0,
+        "slot_ms": 0.125,
+        "sources": 4,
+        "fps": 60.0,
+        "mean_packets": 20.0,
+        "packet_bytes": 1200,
+        "deadline_ms": 12.0,
+        "jitter_ms": 1.0,
+        "high_fraction": 0.25,
+        "high_value": 4.0,
+        "queue_packets": 40,
+        "background": 0.3,
+        "loss": 0.1,
+        "size_cv": 0.5,
+        "high_size_multiplier": 1.0
+      }
+    ],
+    [
+      "iid",
+      {
+        "duration_s": 3.0,
+        "slot_ms": 0.125,
+        "sources": 4,
+        "fps": 60.0,
+        "mean_packets": 20.0,
+        "packet_bytes": 1200,
+        "deadline_ms": 12.0,
+        "jitter_ms": 1.0,
+        "high_fraction": 0.25,
+        "high_value": 4.0,
+        "queue_packets": 40,
+        "background": 0.45,
+        "loss": 0.1,
+        "size_cv": 0.5,
+        "high_size_multiplier": 1.0
+      }
+    ],
+    [
+      "iid",
+      {
+        "duration_s": 3.0,
+        "slot_ms": 0.125,
+        "sources": 4,
+        "fps": 60.0,
+        "mean_packets": 20.0,
+        "packet_bytes": 1200,
+        "deadline_ms": 12.0,
+        "jitter_ms": 1.0,
+        "high_fraction": 0.25,
+        "high_value": 4.0,
+        "queue_packets": 40,
+        "background": 0.6,
+        "loss": 0.1,
+        "size_cv": 0.5,
+        "high_size_multiplier": 1.0
+      }
+    ],
+    [
+      "iid",
+      {
+        "duration_s": 3.0,
+        "slot_ms": 0.125,
+        "sources": 4,
+        "fps": 60.0,
+        "mean_packets": 20.0,
+        "packet_bytes": 1200,
+        "deadline_ms": 12.0,
+        "jitter_ms": 1.0,
+        "high_fraction": 0.25,
+        "high_value": 4.0,
+        "queue_packets": 80,
+        "background": 0.3,
+        "loss": 0.1,
+        "size_cv": 0.5,
+        "high_size_multiplier": 1.0
+      }
+    ],
+    [
+      "iid",
+      {
+        "duration_s": 3.0,
+        "slot_ms": 0.125,
+        "sources": 4,
+        "fps": 60.0,
+        "mean_packets": 20.0,
+        "packet_bytes": 1200,
+        "deadline_ms": 12.0,
+        "jitter_ms": 1.0,
+        "high_fraction": 0.25,
+        "high_value": 4.0,
+        "queue_packets": 80,
+        "background": 0.45,
+        "loss": 0.1,
+        "size_cv": 0.5,
+        "high_size_multiplier": 1.0
+      }
+    ],
+    [
+      "iid",
+      {
+        "duration_s": 3.0,
+        "slot_ms": 0.125,
+        "sources": 4,
+        "fps": 60.0,
+        "mean_packets": 20.0,
+        "packet_bytes": 1200,
+        "deadline_ms": 12.0,
+        "jitter_ms": 1.0,
+        "high_fraction": 0.25,
+        "high_value": 4.0,
+        "queue_packets": 80,
+        "background": 0.6,
+        "loss": 0.1,
+        "size_cv": 0.5,
+        "high_size_multiplier": 1.0
+      }
+    ],
+    [
+      "iid",
+      {
+        "duration_s": 3.0,
+        "slot_ms": 0.125,
+        "sources": 4,
+        "fps": 60.0,
+        "mean_packets": 20.0,
+        "packet_bytes": 1200,
+        "deadline_ms": 12.0,
+        "jitter_ms": 1.0,
+        "high_fraction": 0.25,
+        "high_value": 4.0,
+        "queue_packets": 160,
+        "background": 0.3,
+        "loss": 0.1,
+        "size_cv": 0.5,
+        "high_size_multiplier": 1.0
+      }
+    ],
+    [
+      "iid",
+      {
+        "duration_s": 3.0,
+        "slot_ms": 0.125,
+        "sources": 4,
+        "fps": 60.0,
+        "mean_packets": 20.0,
+        "packet_bytes": 1200,
+        "deadline_ms": 12.0,
+        "jitter_ms": 1.0,
+        "high_fraction": 0.25,
+        "high_value": 4.0,
+        "queue_packets": 160,
+        "background": 0.45,
+        "loss": 0.1,
+        "size_cv": 0.5,
+        "high_size_multiplier": 1.0
+      }
+    ],
+    [
+      "iid",
+      {
+        "duration_s": 3.0,
+        "slot_ms": 0.125,
+        "sources": 4,
+        "fps": 60.0,
+        "mean_packets": 20.0,
+        "packet_bytes": 1200,
+        "deadline_ms": 12.0,
+        "jitter_ms": 1.0,
+        "high_fraction": 0.25,
+        "high_value": 4.0,
+        "queue_packets": 160,
+        "background": 0.6,
+        "loss": 0.1,
+        "size_cv": 0.5,
+        "high_size_multiplier": 1.0
+      }
+    ],
+    [
+      "iid",
+      {
+        "duration_s": 3.0,
+        "slot_ms": 0.125,
+        "sources": 4,
+        "fps": 60.0,
+        "mean_packets": 20.0,
+        "packet_bytes": 1200,
+        "deadline_ms": 12.0,
+        "jitter_ms": 1.0,
+        "high_fraction": 0.25,
+        "high_value": 4.0,
+        "queue_packets": 4096,
+        "background": 0.3,
+        "loss": 0.1,
+        "size_cv": 0.5,
+        "high_size_multiplier": 1.0
+      }
+    ],
+    [
+      "iid",
+      {
+        "duration_s": 3.0,
+        "slot_ms": 0.125,
+        "sources": 4,
+        "fps": 60.0,
+        "mean_packets": 20.0,
+        "packet_bytes": 1200,
+        "deadline_ms": 12.0,
+        "jitter_ms": 1.0,
+        "high_fraction": 0.25,
+        "high_value": 4.0,
+        "queue_packets": 4096,
+        "background": 0.45,
+        "loss": 0.1,
+        "size_cv": 0.5,
+        "high_size_multiplier": 1.0
+      }
+    ],
+    [
+      "iid",
+      {
+        "duration_s": 3.0,
+        "slot_ms": 0.125,
+        "sources": 4,
+        "fps": 60.0,
+        "mean_packets": 20.0,
+        "packet_bytes": 1200,
+        "deadline_ms": 12.0,
+        "jitter_ms": 1.0,
+        "high_fraction": 0.25,
+        "high_value": 4.0,
+        "queue_packets": 4096,
+        "background": 0.6,
+        "loss": 0.1,
+        "size_cv": 0.5,
+        "high_size_multiplier": 1.0
+      }
+    ],
+    [
+      "burst",
+      {
+        "duration_s": 3.0,
+        "slot_ms": 0.125,
+        "sources": 4,
+        "fps": 60.0,
+        "mean_packets": 20.0,
+        "packet_bytes": 1200,
+        "deadline_ms": 12.0,
+        "jitter_ms": 1.0,
+        "high_fraction": 0.25,
+        "high_value": 4.0,
+        "queue_packets": 4096,
+        "background": 0.45,
+        "loss": 0.1,
+        "size_cv": 0.5,
+        "high_size_multiplier": 1.0
+      }
+    ]
+  ],
+  "calibration_seeds": [
+    4000,
+    4001,
+    4002,
+    4003,
+    4004,
+    4005,
+    4006,
+    4007,
+    4008,
+    4009,
+    4010,
+    4011,
+    4012,
+    4013,
+    4014,
+    4015,
+    4016,
+    4017,
+    4018,
+    4019
+  ],
+  "validation_seeds": [
+    5000,
+    5001,
+    5002,
+    5003,
+    5004,
+    5005,
+    5006,
+    5007,
+    5008,
+    5009,
+    5010,
+    5011,
+    5012,
+    5013,
+    5014,
+    5015,
+    5016,
+    5017,
+    5018,
+    5019,
+    5020,
+    5021,
+    5022,
+    5023,
+    5024,
+    5025,
+    5026,
+    5027,
+    5028,
+    5029
+  ],
+  "sha256": {
+    "research_loop.py": "1da808e630925dedc002cb660b8b551c4f98ab132eec4572d9aec56c2bb2f3a1",
+    "ablation_core.py": "1d1e8200ccc6497c8dd67711f07113db662f9587b81d8eef0c0bbefbc6c29f94",
+    "simulate.py": "05e4b3f6f22ae07fdbd7b6f47755d688f20caa95ed9e78c90c3c39f590df16de",
+    "LOOP_PLAN.md": "2889a3e0d263c5fe8d6c04ad286f61a37cba857534370e6a5cbf15e8e296594d",
+    "run.py": "dab5e7e0a76ba22b49f09c9a1ea25f165f0b3094f512f8b4749cbdb3d7d277df",
+    "loop_analyze.py": "bd391a070b1bf0ce618a70e6090a8a3d231b9d50ba2da2ebda407ba8912c3a8f",
+    "review_metrics.py": "0633afe589b3258224faae2f8d6ef20b3cb5cc86822aeb0a531ab63671f611be",
+    "REVISION_PLAN.md": "44c742da090821ea58ea3fe8f2eaa9d67a9a813eee7eebf702f05a5eb8c820fb"
+  }
+}

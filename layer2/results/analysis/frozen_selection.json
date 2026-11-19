@@ -1,0 +1,88 @@
+{
+  "alpha": 0.125,
+  "ordinary_loss_budget": 0.02,
+  "calibration": [
+    {
+      "alpha": 0,
+      "mean_weighted_gain": 0.0,
+      "loss_ci_upper_by_background": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "eligible": true
+    },
+    {
+      "alpha": 0.125,
+      "mean_weighted_gain": 0.01232691982646703,
+      "loss_ci_upper_by_background": [
+        0.007896269985064274,
+        0.012912240975643658,
+        0.01612194628866586
+      ],
+      "eligible": true
+    },
+    {
+      "alpha": 0.25,
+      "mean_weighted_gain": 0.022095460197226257,
+      "loss_ci_upper_by_background": [
+        0.014112934131886044,
+        0.02472023868129755,
+        0.03170119930641267
+      ],
+      "eligible": false
+    },
+    {
+      "alpha": 0.5,
+      "mean_weighted_gain": 0.03949635876781948,
+      "loss_ci_upper_by_background": [
+        0.026314689447745516,
+        0.047243906920683934,
+        0.061753162905638086
+      ],
+      "eligible": false
+    },
+    {
+      "alpha": 1,
+      "mean_weighted_gain": 0.05377369012058133,
+      "loss_ci_upper_by_background": [
+        0.04347817894793668,
+        0.07677404630986524,
+        0.10450187663320672
+      ],
+      "eligible": false
+    }
+  ],
+  "validation_seeds_unseen": [
+    5000,
+    5001,
+    5002,
+    5003,
+    5004,
+    5005,
+    5006,
+    5007,
+    5008,
+    5009,
+    5010,
+    5011,
+    5012,
+    5013,
+    5014,
+    5015,
+    5016,
+    5017,
+    5018,
+    5019,
+    5020,
+    5021,
+    5022,
+    5023,
+    5024,
+    5025,
+    5026,
+    5027,
+    5028,
+    5029
+  ]
+}
