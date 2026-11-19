@@ -116,7 +116,7 @@ BLOCKS_B = [
      "many individual runs exceed it, without treating that as an online guarantee. No adjustment "
      "of alpha is made after seeing validation results."),
 
-    ("fig", "paper/figures/fig3_tradeoff.png",
+    ("fig", "paper_two_layer/figs/fig3_tradeoff.png",
      "Fig. 3. Calibration trade-off frontier. Each point is one importance exponent; the horizontal "
      "axis is the average loss of ordinary frames and the vertical axis the average weighted gain, "
      "both over the three calibration scenarios. The dashed line is the 2 pp budget, and only "
@@ -138,7 +138,7 @@ BLOCKS_B = [
       ["EDF-safe", "76.06", "75.69", "75.18", "76.33"]],
      [1.8, 1.6, 1.6, 1.6, 1.6]),
 
-    ("fig", "paper/figures/fig2_layer2.png",
+    ("fig", "paper_two_layer/figs/fig2_layer2.png",
      "Fig. 2. Layer 2 weighted and ordinary-frame completion in the representative scenario. Bars "
      "are 30-seed means; the difference between FA(0.125) and FA(0) is a shift of service from "
      "ordinary to important frames, not a uniform improvement."),
@@ -166,7 +166,7 @@ BLOCKS_B = [
      "capacity and 30% background the weighted change is about -0.006 pp with an interval crossing "
      "zero, so it cannot be written that every scenario gains."),
 
-    ("fig", "paper/figures/fig4_boundaries.png",
+    ("fig", "paper_two_layer/figs/fig4_boundaries.png",
      "Fig. 4. Selected policy minus EDF-safe on weighted completion across the 13 validation "
      "configurations, with paired 95% intervals. Labels give queue capacity and background "
      "percentage; the last row is the burst-failure configuration. Negative values mean the "
@@ -183,7 +183,8 @@ BLOCKS_B = [
      "background with sufficient queue capacity, and worse when admission or load leaves little for "
      "the scheduler to reorder."),
 
-    ("table", "TABLE VI. EARLY-DROP ABLATION AT 45% BACKGROUND (WEIGHTED CHANGE, PP)",
+    ("table", "TABLE VI. EARLY-DROP ABLATION AT 45% BACKGROUND (WEIGHTED CHANGE, PP; "
+     "CAPACITY IN PACKETS)",
      ["Cap.", "FA(0) drop on-off", "FA(1) drop on-off"],
      [["40", "-0.02 [-0.06, 0.02]", "0.03 [-0.02, 0.08]"],
       ["80", "3.90 [3.40, 4.40]", "2.69 [2.28, 3.10]"],
@@ -313,23 +314,23 @@ BLOCKS_B = [
         "Extended Reality Applications in 6G,” in Proc. IEEE Int. Conf. Commun. (ICC), 2026, pp. "
         "1–6, doi: 10.1109/ICC59461.2026.11588222.",
 
+        "3GPP, “System architecture for the 5G System (5GS),” TS 23.501 V18.8.0, Release 18, Dec. "
+        "2024, clauses 5.7.7 and 5.37.5.2.",
+
         "M. Gapeyenko, V. Petrov, S. Paris, A. Marcano, and K. I. Pedersen, “Standardization of "
         "Extended Reality (XR) over 5G and 5G-Advanced 3GPP New Radio,” IEEE Network, vol. 37, no. "
-        "4, pp. 22–28, 2023, doi: 10.1109/MNET.003.2300062.",
+        "4, pp. 22–28, Jul. 2023, doi: 10.1109/MNET.003.2300062.",
 
         "P. Paymard, S. Paris, A. Amiri, T. E. Kolding, F. Sanchez Moya, and K. I. Pedersen, "
         "“PDU-set Scheduling Algorithm for XR Traffic in Multi-Service 5G-Advanced Networks,” in "
         "Proc. IEEE Int. Conf. Commun. (ICC), 2024, pp. 758–763, doi: "
         "10.1109/ICC51166.2024.10622463.",
 
-        "3GPP, “System architecture for the 5G System (5GS),” TS 23.501 V18.8.0, Release 18, Jan. "
-        "2025, clauses 5.7.7 and 5.37.5.2.",
-
         "M. Laha and G.-M. Muntean, “PDU Set-Aware Delay-Reliability-Optimal Downlink Scheduling for "
         "Extended Reality Applications in 6G,” in Proc. Joint EuCNC & 6G Summit, 2026, pp. "
         "348–353, doi: 10.1109/EuCNC/6GSummit68295.2026.11577614.",
 
-        "N. Villegas, A. Larrañaga, L. Diez, K. Koutlia, S. Lagén, and R. Agüero, “Lyapunov-Based "
+        "N. Villegas, A. Larrañaga-Zumeta, L. Diez, K. Koutlia, S. Lagén, and R. Agüero, “Lyapunov-Based "
         "PDU Set-Aware Scheduling for XR Traffic in 5G-Advanced Networks,” in Proc. IEEE GLOBECOM, "
         "2025, pp. 5526–5531, doi: 10.1109/GLOBECOM59602.2025.11432151.",
 

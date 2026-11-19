@@ -58,7 +58,7 @@ BLOCKS_A = [
 
     ("p",
      "The two layers use different simulators and are therefore not a single system on which one "
-     "algorithm is upgraded. The first layer is the group's earlier Topic 34 study [9]: two "
+     "algorithm is upgraded. The first layer is the group's earlier Topic 34 study: two "
      "periodic streams with different deadlines, FIFO, EDF, a completion-aware EDF (CA-EDF) and a "
      "value-density variant. The second layer is the V3.2 platform developed for this paper: four "
      "60 fps sources, a common 12 ms deadline, four queue capacities, a parameterised score with "
@@ -82,7 +82,7 @@ BLOCKS_A = [
     ("p",
      "3GPP provides the background. The XR overview [1] explains that application data can consist "
      "of related units and that the network may exploit their relations and relative importance. "
-     "Release 18 of TS 23.501 [5] distinguishes set-level delay and error budgets, integrated "
+     "Release 18 of TS 23.501 [3] distinguishes set-level delay and error budgets, integrated "
      "handling information, and the relative importance of a set. This distinction matters here: "
      "completeness defines what counts as a usable delivery, while importance decides how to rank "
      "several usable deliveries when resources are short. Our frame is a modelling mapping of a "
@@ -92,9 +92,9 @@ BLOCKS_A = [
      "PiXR [2] tracks the remaining delay budget of each PDU set and allocates resources using "
      "urgency and instantaneous channel information. Our model borrows the set-level deadline and "
      "the idea of a trade-off under scarcity, but it does not implement PiXR, and we do not claim "
-     "to improve it. Gapeyenko et al. [3] relate XR traffic, delay budgets and system capacity and "
+     "to improve it. Gapeyenko et al. [4] relate XR traffic, delay budgets and system capacity and "
      "discuss application-aware scheduling; their system-level evaluation is richer than our "
-     "single-queue abstraction, so their capacity numbers are not transferred. Paymard et al. [4] "
+     "single-queue abstraction, so their capacity numbers are not transferred. Paymard et al. [5] "
      "use PDU-set context in a multi-service, multi-cell scheduler; this supports the general "
      "direction but is not a performance benchmark for us."),
 
@@ -119,7 +119,8 @@ BLOCKS_A = [
     ("h1", "III. TWO-LAYER DESIGN AND MODEL DIFFERENCES"),
 
     ("p",
-     "Both layers treat a frame as a set of necessary packets. A frame counts as delivered only if "
+     "Both layers treat a frame as a set of necessary packets. The first layer is the group's "
+     "earlier Topic 34 study [9] and the second is the V3.2 platform. A frame counts as delivered only if "
      "all its packets are received before its own deadline; every policy in a layer sees the same "
      "arrival and service trace generated from a given seed, and no policy sees future outcomes. "
      "Table I summarises the differences. The first layer has two streams with periods of 16 ms and "
@@ -132,7 +133,7 @@ BLOCKS_A = [
      "admission."),
 
     ("table", "TABLE I. THE TWO MODELS",
-     ["Dimension", "Layer 1 [9]", "Layer 2 (V3.2)"],
+     ["Dimension", "Layer 1", "Layer 2 (V3.2)"],
      [["Time and opportunities", "1 ms slots, 2 attempts per available slot", "0.125 ms slots, 1 attempt"],
       ["Traffic sources", "2 periodic streams, 16 and 11 ms", "4 sources, 60 fps, random phase/jitter"],
       ["Relative deadline", "24 ms and 16 ms", "12 ms for all frames"],
@@ -245,7 +246,8 @@ BLOCKS_A = [
      [1.7, 1.35, 1.35, 1.25, 1.25, 1.25]),
 
     ("p",
-     "Table II and Fig. 1 report the ten-seed means. CA-EDF raises the complete-frame ratio over EDF by 7.25 "
+     "In Table II, A and B are the two streams and waste is the share of attempts spent on "
+     "failed frames. Table II and Fig. 1 report the ten-seed means. CA-EDF raises the complete-frame ratio over EDF by 7.25 "
      "pp [6.73, 7.76], the weighted ratio by 7.37 pp [6.73, 8.02], and lowers the wasted-attempt "
      "share by 9.72 pp [9.19, 10.24]. Because the ordering is identical in the two policies, this "
      "difference supports the practical value of selective early abandonment. EDF is not better "
@@ -253,7 +255,7 @@ BLOCKS_A = [
      "does not apply directly to a problem with dropping, random service and multi-packet "
      "completion reward."),
 
-    ("fig", "paper/figures/fig1_layer1.png",
+    ("fig", "paper_two_layer/figs/fig1_layer1.png",
      "Fig. 1. Layer 1 complete-frame ratio in the representative scenario. Bars are ten-seed means "
      "with per-mean 95% t intervals; the 60% background and 1% attempt-failure setting is the same "
      "as in Table II."),
